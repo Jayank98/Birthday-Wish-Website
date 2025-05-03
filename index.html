@@ -189,7 +189,7 @@
     </style>
 </head>
 <body>
-
+counter-reset: section;
     <div class="cake-container">
         <div class="cake"></div>
         <div class="cherry"></div>
@@ -209,7 +209,14 @@
                 alert("Welcome to the Cake Party! 🎂");
                 window.location.href = "main.html";
             } else {
+                if(section === 2)
+                {
+                    alert("Hint --> Your Pokemon name!!")
+                 }
+                else {
                 alert("Oops! Don't you know your name?🎂");
+                counter-increment: section;
+                }
             }
         });
 
